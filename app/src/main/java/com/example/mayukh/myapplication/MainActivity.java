@@ -38,15 +38,16 @@ public class MainActivity extends AppCompatActivity {
         //cheers!
         BigInteger bi;
         int n = 0,nn=0;
-
+        n = Integer.parseInt(rad.getText().toString().trim());
         try {
-            n = Integer.parseInt(rad.getText().toString().trim());
-            bi = new BigInteger(ed.getText().toString().trim(),n);
 
             if (n > 36) {
                 Toast.makeText(this, "Base is always <=36", Toast.LENGTH_SHORT).show();
                 return;
             }
+            bi = new BigInteger(ed.getText().toString().trim(),n);
+
+
         } catch (Exception e) {
             Toast.makeText(this, "Incorrect Input", Toast.LENGTH_SHORT).show();
             return;

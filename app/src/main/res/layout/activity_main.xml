@@ -66,6 +66,7 @@
         android:layout_height="wrap_content"
         android:text="Convert"
         android:onClick="ho"
+        android:layout_gravity="center"
 
         />
     <TextView
